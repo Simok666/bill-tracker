@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+@theme {
+    --color-primary: #53d22d;
+    --color-background-light: #f1f5f9;
+    --color-background-dark: #0f172a;
+    --color-card-dark: #1e293b;
+    --color-border-dark: #334155;
+
+    /* Bills View specific colors */
+    --color-background-forest: #152012;
+    --color-surface-forest: #1e2b1a;
+    --color-input-forest: #2a3825;
+
+    /* Login View specific colors */
+    --color-login-primary: #6467f2;
+    --color-login-accent: #0ea5e9;
+    --color-login-bg-light: #f6f6f8;
+
+    /* Register View specific colors */
+    --color-register-bg-dark: #0b1120;
+    /* Deep navy */
+    --color-register-card: #161f32;
+    --color-register-input: #1c273e;
+    --color-register-primary: #505af8;
+    /* Bright blue/indigo */
+
+    --font-display: "Manrope", "sans-serif";
+    --font-inter: "Inter", "sans-serif";
+
+    --radius-lg: 1.5rem;
+    --radius-xl: 2rem;
+}
+
+@layer base {
+    body {
+        font-family: var(--font-display);
+        @apply text-slate-900 dark:text-slate-50 transition-colors duration-300;
+    }
+}
+
+/* Custom scrollbar for a cleaner look */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #0f172a;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #334155;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #475569;
+}
+
+.glass-panel {
+    background: rgba(30, 41, 59, 0.7);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}

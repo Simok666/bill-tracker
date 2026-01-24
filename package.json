@@ -1,0 +1,10 @@
+{
+  "name": "bill-tracker-monorepo",
+  "private": true,
+  "workspaces": [
+    "apps/*"
+  ],
+  "scripts": {
+    "dev:dashboard": "npm run dev --workspace=apps/dashboard"
+  }
+}
